@@ -10,7 +10,7 @@ const Sign_up = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://localhost:3002/signup", {
+      const res = await axios.post("https://stockbazar.onrender.com/signup", {
         email,
         password,
       });
