@@ -13,18 +13,18 @@ const BuyActionWindow = ({ uid }) => {
   const { closeBuyWindow } = useContext(GeneralContext);
 
   const handleBuyClick = () => {
-    axios.post("http://localhost:3002/newOrder", {
+    axios.post("https://stockbazar-backend.onrender.com/allHoldings", {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,
       mode: "BUY",
     });
 
-    closeBuyWindow(); // ✅ works now
+    closeBuyWindow();
   };
 
   const handleCancelClick = () => {
-    closeBuyWindow(); // ✅ works now
+    closeBuyWindow(); 
   };
 
   return (
