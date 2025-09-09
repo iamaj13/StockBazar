@@ -16,7 +16,8 @@ const app = express();
 
 // ✅ Middleware
 app.use(cors({
-  origin: "https://stockbazar.onrender.com" // your deployed frontend
+  origin: "https://stockbazar.onrender.com",
+  "https://stockbazar-my-dashboard.onrender.com"
 }));
 app.use(bodyParser.json());
 
