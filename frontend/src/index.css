@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.hero-btn {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Global Button Styling */
+.btn {
+  padding: 0.75rem 1.5rem; /* consistent padding */
+  font-size: 1.1rem;
+  border-radius: 8px; /* rounded corners */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.btn:hover {
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  border: none;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 114, 255, 0.3);
+  color: #fff !important;
+}
+.text-rotate {
+  display: inline-block;
+  animation: fadeText 9s infinite;
+}
+
+@keyframes fadeText {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  30% { opacity: 1; }
+  40% { opacity: 0; }
+  100% { opacity: 0; }
+}
+footer a {
+  text-decoration: none;
+  color: #000; /* or inherit */
+}
+
+footer a:hover {
+  text-decoration: underline; /* optional: add underline only on hover */
+  color: #007bff; /* optional hover color */
+}
+.no-link-style {
+  text-decoration: none;
+  color: inherit;
+}
+/* Background gradient */
+.login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffffff, #f5f5f5, #eaeaea);
+  font-family: Arial, sans-serif;
+}
+
+/* Card container */
+.login-card {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 350px;
+}
+
+/* Logo styling */
+.login-logo {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+/* Headline */
+.login-card h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input fields */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #0056b3;
+}
+
+/* Messages */
+.message {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #d9534f;
+}
+
+
+
