@@ -10,33 +10,36 @@ const Sign_up = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.post("https://stockbazar.onrender.com/signup", {
-        email,
-        password,
-      });
+      // ✅ Use deployed backend URL
+      const res = await axios.post(
+        "https://stockbazar-backend.onrender.com/signup",
+        { email, password }
+      );
 
       if (res.data.success) {
         setMessage("Login successful ✅ Redirecting...");
+        // ✅ Redirect to your deployed dashboard
         window.location.href = "https://stockbazar-my-dashboard.onrender.com";
       } else {
         setMessage("Invalid credentials ❌");
       }
     } catch (err) {
       setMessage("Server error ❌");
+      console.error(err);
     }
   };
 
   return (
     <div className="login-page">
       <div className="login-card">
-        <img src= "logo.png" alt="Logo" className="login-logo" />
+        <img src="logo.png" alt="Logo" className="login-logo" />
         <h2>Admin Login</h2>
         <form onSubmit={handleSubmit} className="signup-form">
           <div className="form-group">
             <label>Email:</label>
             <input
               type="email"
-              placeholder="Enter admin@exapmle.com"
+              placeholder="Enter admin@example.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
