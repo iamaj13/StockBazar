@@ -17,7 +17,7 @@ const Sign_up = () => {
 
       if (res.data.success) {
         setMessage("Login successful ✅ Redirecting...");
-        window.location.href = "http://localhost:3000/";
+        window.location.href = "https://stockbazar-my-dashboard.onrender.com";
       } else {
         setMessage("Invalid credentials ❌");
       }
