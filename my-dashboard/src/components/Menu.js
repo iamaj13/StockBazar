@@ -20,7 +20,7 @@ const Menu = () => {
     sessionStorage.clear();
 
     // force full reload to signup (login) page
-    window.location.href = "https://stockbazar.onrender.com/signup";
+    window.location.href = "https://stockbazar.onrender.com";
   };
 
   const menuClass = "menu";
