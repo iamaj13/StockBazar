@@ -12,7 +12,7 @@ const Sign_up = () => {
     try {
       // ✅ Use deployed backend URL
       const res = await axios.post(
-        "https://stockbazar-backend.onrender.com/",
+        "https://stockbazar-backend.onrender.com/signup",
         { email, password }
       );
 
