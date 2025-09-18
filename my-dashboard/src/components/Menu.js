@@ -92,7 +92,7 @@ const Menu = () => {
 
         {/* Right: Profile */}
         <div className="profile" onClick={handleProfileClick}>
-          <div className="avatar">AJ</div>
+          <div className="avatar">@</div>
           <p className="username">USER ID</p>
 
           <div
