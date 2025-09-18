@@ -13,6 +13,16 @@ const Menu = () => {
     setIsProfileDropdownOpen(!isProfileDropdownOpen);
   };
 
+  // Logout handler with full redirect
+  const handleLogout = () => {
+    // clear any stored tokens / sessions if needed
+    localStorage.removeItem("token");
+    sessionStorage.clear();
+
+    // force full reload to signup (login) page
+    window.location.href = "https://stockbazar.onrender.com/signup";
+  };
+
   const menuClass = "menu";
   const activeMenuClass = "menu selected";
 
@@ -93,7 +103,9 @@ const Menu = () => {
             <ul>
               <li>My Profile</li>
               <li>Settings</li>
-              <li>Logout</li>
+              <li onClick={handleLogout} style={{ cursor: "pointer" }}>
+                Logout
+              </li>
             </ul>
           </div>
         </div>
